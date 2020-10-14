@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lotto Raffle</title>
+  <style>
+    #yellow {
+      background: rgb(255, 187, 0);
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      float: left;
+      margin: 20px;
+      text-align: center;
+      line-height: 100px;
+      font-size: 40px;
+      color: white;
+    }
+    #blue {
+      background: rgb(50, 50, 255);
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      float: left;
+      margin: 20px;
+      text-align: center;
+      line-height: 100px;
+      font-size: 40px;
+      color: white;
+    }
+    #red {
+      background: rgb(255, 55, 55);
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      float: left;
+      margin: 20px;
+      text-align: center;
+      line-height: 100px;
+      font-size: 40px;
+      color: white;
+    }
+    #grey {
+      background: rgb(128, 128, 128);
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      float: left;
+      margin: 20px;
+      text-align: center;
+      line-height: 100px;
+      font-size: 40px;
+      color: white;
+    }
+    #green {
+      background: rgb(0, 128, 0);
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      float: left;
+      margin: 20px;
+      text-align: center;
+      line-height: 100px;
+      font-size: 40px;
+      color: white;
+    }
+    #lottoBtn {
+      margin-top: 40px;
+      margin-bottom: 100px;
+      border-radius: 30px;
+      font-size: xx-large;
+      width: 200px;
+      height: 100px;
+      border: grey outset;
+      background: rgb(0, 163, 136);
+      color: rgb(228, 228, 228);
+    }
+    #lottoTable {
+      margin: 0 auto;
+      width: 840px;
+    }
+    #analysisLotto {
+      position: relative;
+      margin: 0 auto;
+      width: 900px;
+    }
+    #lottoInput {
+      width: 200px;
+      height: 25px;
+      border-radius: 30px;
+    }
+  </style>
+</head>
+<body>
+  <center>
+    <br><br>
+    <input type="number" id="lottoInput" placeholder="Enter the number of cases" min="1"><br>
+    <button type="button" id="lottoBtn" onclick="analysis()">Lotto Analysis</button><br>
+  </center>
+  <div id="analysisLotto"></div><br>
+  <div id="lottoTable"></div>
+  <script src="./lotto.js"></script>
+</body>
+</html>
